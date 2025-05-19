@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Cabañas "El Descanso"</title>
+    <link rel="stylesheet" href="modo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cabañas "El Descanso"</h1>
+            <p>Tu escapada perfecta a la naturaleza</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cabanas">Nuestras Cabañas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio" class="container">
+            <h2>Bienvenido a Cabañas "El Descanso"</h2>
+            <p>Disfruta de la tranquilidad y belleza de nuestras cabañas, equipadas con todo lo necesario para una estadía inolvidable. Ideales para familias, parejas o aventureros solitarios.</p>
+                <video class="mi-video-centrado" width="640" height="360" controls>
+                <source src="video1.mp4" type="video/mp4">
+
+                </video>
+                
+        </section>
+
+        <section id="cabanas" class="container">
+            <h2>Nuestras Cabañas</h2>
+            <div class="cabanas-grid">
+                <!-- Cabaña 1 -->
+                <div class="cabana-card">
+                    <img src="cab21.jpg" alt="Cabaña El Sol">
+                    <h3>Cabaña El Sol</h3>
+                    <p>Acogedora cabaña para 2- personas. Vistas al amanecer.</p>
+                    <p><strong>Capacidad:</strong>  personas</p>
+                    <p><strong>Precio:</strong> $80/noche</p>
+                    <a href="#contacto" class="btn-reservar">Consultar Disponibilidad</a>
+                </div>
+
+                <!-- Cabaña 2 -->
+                <div class="cabana-card">
+                    <img src="cab11.jpg" alt="Cabaña El Bosque">
+                    <h3>Cabaña El Bosque</h3>
+                    <p>Rodeada de árboles, ideal para familias. Capacidad para 5.</p>
+                    <p><strong>Capacidad:</strong> 7 personas</p>
+                    <p><strong>Precio:</strong> $120/noche</p>
+                    <a href="#contacto" class="btn-reservar">Consultar Disponibilidad</a>
+                </div>
+
+                <!-- Cabaña 3 -->
+                <div class="cabana-card">
+                    <img src="https://via.placeholder.com/300x200?text=Cabaña+La+Montaña" alt="Cabaña La Montaña">
+                    <h3>Cabaña La Montaña</h3>
+                    <p>Con impresionantes vistas a las montañas. Para 4 personas.</p>
+                    <p><strong>Capacidad:</strong> 5 personas</p>
+                    <p><strong>Precio:</strong> $100/noche</p>
+                    <a href="#contacto" class="btn-reservar">Consultar Disponibilidad</a>
+                </div>
+                <h2>Nuestros Appartments</h2>
+                <!-- Cabaña 4 -->
+                <div class="cabana-card">
+                    <img src="apa11.jpg" alt="Appartment El Lago">
+                    <h3>Apartment El Lago</h3>
+                    <p>Cercana al lago, perfecta para amantes del agua. Para 2-4 personas.</p>
+                    <p><strong>Capacidad:</strong> 2-4 personas</p>
+                    <p><strong>Precio:</strong> $100/noche</p>
+                    <a href="#contacto" class="btn-reservar">Consultar Disponibilidad</a>
+                </div>
+
+                <!-- Cabaña 5 -->
+                <div class="cabana-card">
+                    <img src="apa12.jpg" alt="Apartment El Refugio">
+                    <h3>Apartment El Refugio</h3>
+                    <p>Pequeña y rústica, para una experiencia auténtica. Para 2-3 personas.</p>
+                    <p><strong>Capacidad:</strong> 2-3 personas</p>
+                    <p><strong>Precio:</strong> $80/noche</p>
+                    <a href="#contacto" class="btn-reservar">Consultar Disponibilidad</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2>Contacto y Reservas</h2>
+            <p>Envíanos tus datos y nos pondremos en contacto para confirmar tu reserva o responder tus consultas.</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Cliente:</label>
+                    <input type="text" id="nombre" name="nombre_cliente" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono_cliente" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo_cliente" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cabana_interes">Cabaña de Interés (Opcional):</label>
+                    <select id="cabana_interes" name="cabana_interes">
+                        <option value="">-- Seleccione una cabaña --</option>
+                        <option value="sol">Cabaña El Sol</option>
+                        <option value="bosque">Cabaña El Bosque</option>
+                        <option value="montana">Cabaña La Montaña</option>
+                        <option value="lago">Cabaña El Lago</option>
+                        <option value="refugio">Cabaña El Refugio</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha_alternativa">Fecha Alternativa de Alquiler:</label>
+                    <input type="date" id="fecha_alternativa" name="fecha_alternativa">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje Adicional (Opcional):</label>
+                    <textarea id="mensaje" name="mensaje_cliente" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Cabañas "El Descanso". Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
