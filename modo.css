@@ -240,3 +240,7 @@ footer {
         grid-template-columns: 1fr; /* Una cabaña por fila en móviles */
     }
 }
+.map-container {
+  width: 50%;
+  height: 400px; 
+}
